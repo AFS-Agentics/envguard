@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+.pytest_cache/
+.coverage
+*.pyc
+
+# EnvGuard
+.env
+.env.encrypted
+.envguard/
+.env.backup
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
