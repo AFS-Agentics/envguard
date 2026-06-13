@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "envguard"
+version = "0.1.0"
+description = "Manage, validate, and secure environment variables across projects"
+readme = "README.md"
+authors = [
+    {name = "AFS Agentics", email = "opensource@afs-agentics.io"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.10"
+keywords = ["env", "environment", "secrets", "cli", "validation", "security"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "cryptography>=41.0.0",
+]
+optional-dependencies = {dev = ["pytest>=7.0", "pytest-cov>=4.0"]}
+
+[project.scripts]
+envguard = "envguard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["envguard*"]
