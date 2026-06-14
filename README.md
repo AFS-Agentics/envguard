@@ -1,3 +1,5 @@
+![Cover](cover.png)
+
 # EnvGuard 🔐
 
 **Manage, validate, and secure environment variables across your projects.**
